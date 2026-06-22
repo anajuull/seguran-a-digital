@@ -1,24 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <defs>
-    <linearGradient id="purpleGradient" x1="32" y1="28" x2="32" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#c37cfb"/>
-      <stop offset="60%" stop-color="#8b3be5"/>
-      <stop offset="100%" stop-color="#5a1ead"/>
+    <linearGradient id="heartGradient" x1="100" y1="20" x2="100" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e88a9e"/>
+      <stop offset="60%" stop-color="#d9677f"/>
+      <stop offset="100%" stop-color="#c85670"/>
     </linearGradient>
-    <radialGradient id="shineGlow" cx="0.5" cy="0.3" r="0.8" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
   </defs>
-  <rect x="14" y="28" width="36" height="28" rx="6" ry="6" fill="url(#purpleGradient)" stroke="#380066" stroke-width="3"/>
-  <path d="M22 28V20a10 10 0 0 1 20 0v8" fill="none" stroke="#380066" stroke-width="3"/>
-  <circle cx="32" cy="42" r="4" fill="#2a0033" stroke="#eed4ff" stroke-width="1.5"/>
-  <circle cx="34" cy="39" r="1.2" fill="#fff" opacity="0.9"/>
-  <circle cx="26" cy="34" r="2.2" fill="url(#shineGlow)" opacity="0.7"/>
-  <g fill="#fff" opacity="0.8">
-    <polygon points="16,18 18.5,20 16,22 16.5,20"/>
-    <polygon points="52,16 54.5,18 52,20 52.5,18"/>
-    <polygon points="43,52 44.5,53 43,54 43.2,53"/>
-    <polygon points="20,46 21.8,47.2 20,48.5 20.3,47.2"/>
-  </g>
+  <!-- Coração -->
+  <path d="M100 170 C40 130, 20 100, 20 70 C20 45, 35 30, 55 30 C70 30, 85 40, 100 55 C115 40, 130 30, 145 30 C165 30, 180 45, 180 70 C180 100, 160 130, 100 170 Z" fill="url(#heartGradient)"/>
+  
+  <!-- Buraco da fechadura (superior) -->
+  <circle cx="100" cy="70" r="12" fill="white"/>
+  
+  <!-- Buraco da fechadura (inferior/haste) -->
+  <rect x="95" y="82" width="10" height="35" fill="white"/>
 </svg>
